@@ -19,3 +19,27 @@ Regenrating the events according to this notebook at git hash:
 c4f2d4c3e1a48c67151c5ca58ddcbbe0e2ff5485
 
 Honestly unsure about whether to git track the input data files, leaving untracked for now.
+
+23-10-24 Storm Colloms
+
+Copied over simulated events processed file that I originally downloaded from April's zenodo. The subsets of events (e.g. _50events, _100events)
+contain the first 50, 100 events from the total simulated population corresponding to the correct model.
+
+Created flow_models dir in inputs, this will be the saved location of the trained flows.
+
+06-11-24 Storm Colloms
+
+Confirmed that cosmo weighted events are fine to use with uniform in source frame redshift prior.
+Trying pre-processing IMRPhenom samples, which is overwriting the priors files rn. These are stored in events-IMR (currently .gitignored) and were generated with a3f89f7f9c04eb1399ed9bf04abddc111d5e166c version of notebook.
+
+GWTC-3/events directory is total 121MB which is trackable via git-lfs if I want to set this up.
+Installed git lfs and tracking GWTC-3/events dir with this. current git attribites file set to track any 
+*.hdf5 files with lfs.
+I think the priors files should actually be the same, as they are both read from the ['C01:IMRPhenomXPHM']['priors']['analytic'] key. Anyway this just changes the max/min ranges for the prior, which is just a prior scaling on the priors.
+Commiting priors files to repo.
+
+23-11-24
+
+Started regenerating mixed samples just to check i didn't overwrite the current inputs with nocosmo samples at any point, but I think I started generating these in another folder and then removed this. Anyway the test samples (generated correctly) looked the same as whats in the current inputs/GWTC-3/events so we are good. I did delete the test folder. Learning to take good notes is a process.
+
+Going to set up a *test* continuous inference run in this directory, after having decided the ordeal with the number of samples for undersampled events.
