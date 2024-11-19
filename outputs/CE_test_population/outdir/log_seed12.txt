@@ -1,0 +1,16 @@
+000 (158433.000.000) 2024-11-18 15:56:34 Job submitted from host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=schedd_1786199_85d7>
+...
+001 (158433.000.000) 2024-11-18 15:56:34 Job executing on host: <130.209.45.193:9618?addrs=130.209.45.193-9618&alias=deimos.astro.gla.ac.uk&noUDP&sock=startd_47_2172>
+	SlotName: slot1_3@deimos.astro.gla.ac.uk
+	AvailableGPUs = { GPUs_GPU_9ed99095 }
+	CondorScratchDir = "/var/lib/condor/execute/dir_476070"
+	Cpus = 1
+	Disk = 4195328
+	GPUs = 1
+	GPUs_GPU_9ed99095 = [ Id = "GPU-9ed99095"; ClockMhz = 1695.0; Capability = 8.6; CoresPerCU = 128; DeviceName = "NVIDIA GeForce RTX 3090"; DeviceUuid = "9ed99095-ea7d-ae22-8aa3-a439270c7875"; ECCEnabled = false; ComputeUnits = 82; DriverVersion = 12.2; DevicePciBusId = "0000:01:00.0"; GlobalMemoryMb = 24260; MaxSupportedVersion = 12020 ]
+	Memory = 16384
+...
+006 (158433.000.000) 2024-11-18 15:56:43 Image size of job updated: 2
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
