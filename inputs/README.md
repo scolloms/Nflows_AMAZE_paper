@@ -38,8 +38,12 @@ Installed git lfs and tracking GWTC-3/events dir with this. current git attribit
 I think the priors files should actually be the same, as they are both read from the ['C01:IMRPhenomXPHM']['priors']['analytic'] key. Anyway this just changes the max/min ranges for the prior, which is just a prior scaling on the priors.
 Commiting priors files to repo.
 
-23-11-24
+12-11-24
 
 Started regenerating mixed samples just to check i didn't overwrite the current inputs with nocosmo samples at any point, but I think I started generating these in another folder and then removed this. Anyway the test samples (generated correctly) looked the same as whats in the current inputs/GWTC-3/events so we are good. I did delete the test folder. Learning to take good notes is a process.
 
 Going to set up a *test* continuous inference run in this directory, after having decided the ordeal with the number of samples for undersampled events. Running with AMAZE_model_select code ver bcf7a797b98683fba1db1c14bbe39f44215c7b2d.
+
+19-11-24
+
+Made copies of flow_models/test_121124 in flow_models/prod, as nothing has changed that will change the training of flows. Therefore the flows used in production results will have been generated with version bcf7a797b98683fba1db1c14bbe39f44215c7b2d of the code.
