@@ -1,0 +1,60 @@
+000 (159021.000.000) 2024-11-23 00:44:07 Job submitted from host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=schedd_1786199_85d7>
+...
+001 (159021.000.000) 2024-11-24 08:04:27 Job executing on host: <130.209.45.56:9618?addrs=130.209.45.56-9618&alias=serenity.astro.gla.ac.uk&noUDP&sock=startd_47_2172>
+	SlotName: slot1_2@serenity.astro.gla.ac.uk
+	AvailableGPUs = { GPUs_GPU_8013366a }
+	CondorScratchDir = "/var/lib/condor/execute/dir_2441241"
+	Cpus = 1
+	Disk = 4195328
+	GPUs = 1
+	GPUs_GPU_8013366a = [ Id = "GPU-8013366a"; ClockMhz = 1695.0; Capability = 8.6; CoresPerCU = 128; DeviceName = "NVIDIA GeForce RTX 3090"; DeviceUuid = "8013366a-fb1c-699c-f34c-39982261207c"; ECCEnabled = false; ComputeUnits = 82; DriverVersion = 12.2; DevicePciBusId = "0000:1A:00.0"; GlobalMemoryMb = 24260; MaxSupportedVersion = 12020 ]
+	Memory = 16384
+...
+006 (159021.000.000) 2024-11-24 08:04:36 Image size of job updated: 2
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+006 (159021.000.000) 2024-11-24 08:05:49 Image size of job updated: 256
+	1  -  MemoryUsage of job (MB)
+	136  -  ResidentSetSize of job (KB)
+...
+005 (159021.000.000) 2024-11-24 08:05:49 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :        2  4194304   4195328 
+	   GPUs                 :                 1         1 "GPU-8013366a"
+	   Memory (MB)          :        1    16384     16384 
+	   TimeExecute (s)      :       82                    
+	   TimeSlotBusy (s)     :       82                    
+
+	Job terminated of its own accord at 2024-11-24T08:05:49Z with exit-code 1.
+...
+000 (159025.000.000) 2024-11-25 10:35:22 Job submitted from host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=schedd_1786199_85d7>
+...
+001 (159025.000.000) 2024-11-25 10:35:23 Job executing on host: <130.209.45.56:9618?addrs=130.209.45.56-9618&alias=serenity.astro.gla.ac.uk&noUDP&sock=startd_47_2172>
+	SlotName: slot1_1@serenity.astro.gla.ac.uk
+	AvailableGPUs = { GPUs_GPU_625f6b03 }
+	CondorScratchDir = "/var/lib/condor/execute/dir_2443004"
+	Cpus = 1
+	Disk = 4195328
+	GPUs = 1
+	GPUs_GPU_625f6b03 = [ Id = "GPU-625f6b03"; ClockMhz = 1695.0; Capability = 8.6; CoresPerCU = 128; DeviceName = "NVIDIA GeForce RTX 3090"; DeviceUuid = "625f6b03-2809-23ef-06f5-609bcf7f9386"; ECCEnabled = false; ComputeUnits = 82; DriverVersion = 12.2; DevicePciBusId = "0000:68:00.0"; GlobalMemoryMb = 24257; MaxSupportedVersion = 12020 ]
+	Memory = 16384
+...
+006 (159025.000.000) 2024-11-25 10:35:31 Image size of job updated: 280784
+	275  -  MemoryUsage of job (MB)
+	280784  -  ResidentSetSize of job (KB)
+...
+006 (159025.000.000) 2024-11-25 10:40:31 Image size of job updated: 11108728
+	8901  -  MemoryUsage of job (MB)
+	9114448  -  ResidentSetSize of job (KB)
+...
