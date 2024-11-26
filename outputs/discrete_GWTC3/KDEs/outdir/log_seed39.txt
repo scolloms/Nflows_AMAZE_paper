@@ -1,0 +1,20 @@
+000 (159447.001.000) 2024-11-26 11:59:21 Job submitted from host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=schedd_1786199_85d7>
+...
+001 (159447.001.000) 2024-11-26 11:59:30 Job executing on host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=startd_1786199_85d7>
+	SlotName: slot1_4@wiay.astro.gla.ac.uk
+	AvailableGPUs = { GPUs_GPU_df018c53 }
+	CondorScratchDir = "/var/lib/condor/execute/dir_2940720"
+	Cpus = 1
+	Disk = 4195963
+	GPUs = 1
+	GPUs_GPU_df018c53 = [ Id = "GPU-df018c53"; ClockMhz = 1545.0; Capability = 7.5; CoresPerCU = 64; DeviceName = "NVIDIA GeForce RTX 2080 Ti"; DeviceUuid = "df018c53-b27b-0d21-a520-70ec0819ac12"; ECCEnabled = false; ComputeUnits = 68; DriverVersion = 12.5; DevicePciBusId = "0000:D9:00.0"; GlobalMemoryMb = 10827; MaxSupportedVersion = 12050 ]
+	Memory = 16384
+...
+006 (159447.001.000) 2024-11-26 11:59:38 Image size of job updated: 625456
+	611  -  MemoryUsage of job (MB)
+	625456  -  ResidentSetSize of job (KB)
+...
+006 (159447.001.000) 2024-11-26 12:04:38 Image size of job updated: 6177080
+	6033  -  MemoryUsage of job (MB)
+	6177080  -  ResidentSetSize of job (KB)
+...
