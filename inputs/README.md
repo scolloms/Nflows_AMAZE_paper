@@ -47,3 +47,16 @@ Going to set up a *test* continuous inference run in this directory, after havin
 19-11-24
 
 Made copies of flow_models/test_121124 in flow_models/prod, as nothing has changed that will change the training of flows. Therefore the flows used in production results will have been generated with version bcf7a797b98683fba1db1c14bbe39f44215c7b2d of the code.
+
+22-11-24
+
+Training a new flow model in inputs/flow_models/prod_CEtrain with more neurons.
+
+26-11-24
+
+Model which I tried to increase the number of neurons was overridden by default no_neurons in code (128), to be fixed in future.
+The model is saved in Nflows_AMAZE_paper/inputs/flow_models/prod_CEtrain, and has the best epoch at 14632. The emulation at chi_b=0.0,
+ alpha_CE=5.0 looks better than the previously trained flow (see AMAZE_model_selection/notebooks/plot_obs_likelihoods.ipynb).
+
+ Copied this model into Nflows_AMAZE_paper/inputs/flow_models/mixed_models alongside the other flow models for each channel from /prod.
+ Might use this set for inference instead?

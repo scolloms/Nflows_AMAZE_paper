@@ -13,4 +13,12 @@ There is some burnin still present here, I think I will increase the burnin frac
 
 The CE test smdl run also finished and I plotted the trained flow on the test model, it looks good.
 
-I think I will use the trained flows I have already for inference, just copy over the test_121124 models, as I haven't made any changes to the training since running these tests.
+I think I will use the trained flows I have already for inference, just copy over the test_121124 models, as I haven't made any changes to the training since running these tests. Running production runs with code ver 2955e7db64ed4bcd977fa424affd17c2c8012093 in cont_GWTC3/production.
+
+And now in discrete_GWTC3/flow and /KDEs.
+
+22-11-24
+
+First continuous inference run done and looked at results in /data/wiay/2297403c/amaze_model_select/AMAZE_model_selection/notebooks/plot_continuous_result.ipynb. Trying to figure out why the alpha_CE posterior is quite different. The last results I had in /data/wiay/2297403c/amaze_model_select/AMAZE_project_resources/test_production_runs/flows_prod_tests/output_flows_cont.hdf5 were run at a stage where the alpha_CE interpolation was incorrect - I think the interpolator was set up over non-log alpha_CE but then given alpha_CE for interpolation (commit ef80d32932cbdad44a5aa9d22d3091160073d4b0). These flow models also had CE retrained for a discrete inference. But the previous previous results in /AMAZE_project_rescources/continuous_GWTC-3/ I'm not sure why they also rail at alpha_CE=5. 
+
+Checking old flow models which look like they trained slightly better (checked in /data/wiay/2297403c/amaze_model_select/AMAZE_model_selection/notebooks/plot_obs_likelihoods.ipynb). Stopped the KDE models which hadn't started running yet and training a new flow model in inputs/prod_CEtrain.
