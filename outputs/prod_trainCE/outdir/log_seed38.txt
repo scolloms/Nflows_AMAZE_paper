@@ -58,3 +58,24 @@
 	8901  -  MemoryUsage of job (MB)
 	9114448  -  ResidentSetSize of job (KB)
 ...
+005 (159025.000.000) 2024-11-27 05:16:09 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 1 18:19:18, Sys 0 00:10:56  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 1 18:19:18, Sys 0 00:10:56  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated Assigned
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      2     4194304   4195328 
+	   GPUs                 :      0.90        1         1 "GPU-625f6b03"
+	   GpusMemory (MB)      :  20927                       
+	   Memory (MB)          :   8901       16384     16384 
+	   TimeExecute (s)      : 153646                       
+	   TimeSlotBusy (s)     : 153647                       
+
+	Job terminated of its own accord at 2024-11-27T05:16:09Z with exit-code 0.
+...

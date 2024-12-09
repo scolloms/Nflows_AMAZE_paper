@@ -1,0 +1,45 @@
+000 (160207.000.000) 2024-11-27 23:55:25 Job submitted from host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=schedd_1786199_85d7>
+...
+001 (160207.000.000) 2024-11-29 01:29:36 Job executing on host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=startd_1786199_85d7>
+	SlotName: slot1_2@wiay.astro.gla.ac.uk
+	AvailableGPUs = { GPUs_GPU_ccce0a6d }
+	CondorScratchDir = "/var/lib/condor/execute/dir_2219397"
+	Cpus = 1
+	Disk = 4195963
+	GPUs = 1
+	GPUs_GPU_ccce0a6d = [ Id = "GPU-ccce0a6d"; ClockMhz = 1545.0; Capability = 7.5; CoresPerCU = 64; DeviceName = "NVIDIA GeForce RTX 2080 Ti"; DeviceUuid = "ccce0a6d-fcb7-3017-31fe-49f0f1089b6b"; ECCEnabled = false; ComputeUnits = 68; DriverVersion = 12.5; DevicePciBusId = "0000:B1:00.0"; GlobalMemoryMb = 10827; MaxSupportedVersion = 12050 ]
+	Memory = 16384
+...
+006 (160207.000.000) 2024-11-29 01:29:45 Image size of job updated: 721964
+	706  -  MemoryUsage of job (MB)
+	721964  -  ResidentSetSize of job (KB)
+...
+006 (160207.000.000) 2024-11-29 01:34:46 Image size of job updated: 5810364
+	5675  -  MemoryUsage of job (MB)
+	5810364  -  ResidentSetSize of job (KB)
+...
+006 (160207.000.000) 2024-11-29 01:39:46 Image size of job updated: 5810364
+	5677  -  MemoryUsage of job (MB)
+	5812412  -  ResidentSetSize of job (KB)
+...
+005 (160207.000.000) 2024-12-06 00:41:20 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 4 10:09:17, Sys 2 13:13:41  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 4 10:09:17, Sys 2 13:13:41  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated Assigned
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      2     4194304   4195963 
+	   GPUs                 :      0.49        1         1 "GPU-ccce0a6d"
+	   GpusMemory (MB)      :   3807                       
+	   Memory (MB)          :   5677       16384     16384 
+	   TimeExecute (s)      : 601904                       
+	   TimeSlotBusy (s)     : 601904                       
+
+	Job terminated of its own accord at 2024-12-06T00:41:20Z with exit-code 0.
+...

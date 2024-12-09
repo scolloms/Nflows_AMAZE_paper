@@ -1,0 +1,43 @@
+000 (160206.001.000) 2024-11-27 23:52:31 Job submitted from host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=schedd_1786199_85d7>
+...
+033 (160206.001.000) 2024-11-27 23:53:23 Changing job attribute JobPrio from 0 to 1
+...
+001 (160206.001.000) 2024-11-28 12:35:29 Job executing on host: <130.209.45.56:9618?addrs=130.209.45.56-9618&alias=serenity.astro.gla.ac.uk&noUDP&sock=startd_47_2172>
+	SlotName: slot1_2@serenity.astro.gla.ac.uk
+	AvailableGPUs = { GPUs_GPU_8013366a }
+	CondorScratchDir = "/var/lib/condor/execute/dir_2455901"
+	Cpus = 1
+	Disk = 4195328
+	GPUs = 1
+	GPUs_GPU_8013366a = [ Id = "GPU-8013366a"; ClockMhz = 1695.0; Capability = 8.6; CoresPerCU = 128; DeviceName = "NVIDIA GeForce RTX 3090"; DeviceUuid = "8013366a-fb1c-699c-f34c-39982261207c"; ECCEnabled = false; ComputeUnits = 82; DriverVersion = 12.2; DevicePciBusId = "0000:1A:00.0"; GlobalMemoryMb = 24260; MaxSupportedVersion = 12020 ]
+	Memory = 16384
+...
+006 (160206.001.000) 2024-11-28 12:35:38 Image size of job updated: 257048
+	251  -  MemoryUsage of job (MB)
+	256968  -  ResidentSetSize of job (KB)
+...
+006 (160206.001.000) 2024-11-28 12:40:38 Image size of job updated: 9675752
+	8224  -  MemoryUsage of job (MB)
+	8421072  -  ResidentSetSize of job (KB)
+...
+005 (160206.001.000) 2024-12-03 15:21:01 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 4 20:17:27, Sys 0 06:23:19  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 4 20:17:27, Sys 0 06:23:19  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated Assigned
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      2     4194304   4195328 
+	   GPUs                 :      0.89        1         1 "GPU-8013366a"
+	   GpusMemory (MB)      :  24542                       
+	   Memory (MB)          :   8224       16384     16384 
+	   TimeExecute (s)      : 441932                       
+	   TimeSlotBusy (s)     : 441932                       
+
+	Job terminated of its own accord at 2024-12-03T15:21:01Z with exit-code 0.
+...

@@ -1,0 +1,104 @@
+27
+Using Normalising Flows for discrete inference.
+
+Reading models, applying transformations, and initializing underlying Normalising Flow models...
+
+
+Formation channels: CE, CHE, GC, NSC, SMT
+Astrophysical models: CE/chi00/alpha02, CE/chi00/alpha05, CE/chi00/alpha10, CE/chi00/alpha20, CE/chi00/alpha50, CE/chi01/alpha02, CE/chi01/alpha05, CE/chi01/alpha10, CE/chi01/alpha20, CE/chi01/alpha50, CE/chi02/alpha02, CE/chi02/alpha05, CE/chi02/alpha10, CE/chi02/alpha20, CE/chi02/alpha50, CE/chi05/alpha02, CE/chi05/alpha05, CE/chi05/alpha10, CE/chi05/alpha20, CE/chi05/alpha50, CHE/chi00, CHE/chi01, CHE/chi02, CHE/chi05, GC/chi00, GC/chi01, GC/chi02, GC/chi05, NSC/chi00, NSC/chi01, NSC/chi02, NSC/chi05, SMT/chi00, SMT/chi01, SMT/chi02, SMT/chi05
+Parameters for inference: mchirp, q, chieff, z
+
+Generating observations...
+
+Using the following 68 GW observations for inference:
+GW170823_131358 GW190519_153544 GW190929_012149 GW200202_154313 GW190602_175927 GW170818_022509 GW190720_000836 GW191105_143521 GW190408_181802 GW150914_095045 GW191215_223052 GW170809_082821 GW191230_180458 GW190925_232845 GW151226_033853 GW190707_093326 GW190412_053044 GW190828_063405 GW200112_155838 GW190725_174728 GW190620_030421 GW190803_022701 GW190728_064510 GW200311_115853 GW200225_060421 GW190910_112807 GW191109_010717 GW190828_065509 GW191103_012549 GW190701_203306 GW190421_213856 GW170729_185629 GW190413_134308 GW190527_092055 GW200216_220804 GW190915_235702 GW190924_021846 GW190706_222641 GW190521_074359 GW190517_055101 GW200316_215756 GW151012_095443 GW191127_050227 GW190805_211137 GW200224_222234 GW190503_185404 GW191129_134029 GW191204_171526 GW170104_101158 GW200208_130117 GW200219_094415 GW190731_140936 GW200209_085452 GW200128_022011 GW190930_133541 GW190512_180714 GW190719_215514 GW190630_185205 GW190727_060333 GW170814_103043 GW190413_052954 GW170608_020116 GW200302_015811 GW200129_065458 GW191216_213338 GW190513_205428 GW191222_033537 GW190708_232457
+
+Training/Loading flows
+Sampling...
+
+Sampling complete!
+
+Sample breakdown:
+  Model chi00/alpha02
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi00/alpha05
+     6198 samples
+     betas=[('CE', 0.821), ('CHE', 0.008), ('GC', 0.025), ('NSC', 0.019), ('SMT', 0.127)]
+     detectable betas=[]
+  Model chi00/alpha10
+     354 samples
+     betas=[('CE', 0.676), ('CHE', 0.018), ('GC', 0.033), ('NSC', 0.032), ('SMT', 0.24)]
+     detectable betas=[]
+  Model chi00/alpha20
+     1607 samples
+     betas=[('CE', 0.833), ('CHE', 0.011), ('GC', 0.029), ('NSC', 0.018), ('SMT', 0.111)]
+     detectable betas=[]
+  Model chi00/alpha50
+     77950 samples
+     betas=[('CE', 0.909), ('CHE', 0.006), ('GC', 0.018), ('NSC', 0.011), ('SMT', 0.056)]
+     detectable betas=[]
+  Model chi01/alpha02
+     1 samples
+     betas=[('CE', 0.195), ('CHE', 0.005), ('GC', 0.171), ('NSC', 0.07), ('SMT', 0.559)]
+     detectable betas=[]
+  Model chi01/alpha05
+     92 samples
+     betas=[('CE', 0.215), ('CHE', 0.013), ('GC', 0.333), ('NSC', 0.071), ('SMT', 0.368)]
+     detectable betas=[]
+  Model chi01/alpha10
+     134 samples
+     betas=[('CE', 0.293), ('CHE', 0.027), ('GC', 0.233), ('NSC', 0.059), ('SMT', 0.388)]
+     detectable betas=[]
+  Model chi01/alpha20
+     3180 samples
+     betas=[('CE', 0.782), ('CHE', 0.011), ('GC', 0.089), ('NSC', 0.029), ('SMT', 0.09)]
+     detectable betas=[]
+  Model chi01/alpha50
+     60484 samples
+     betas=[('CE', 0.847), ('CHE', 0.008), ('GC', 0.069), ('NSC', 0.021), ('SMT', 0.055)]
+     detectable betas=[]
+  Model chi02/alpha02
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi02/alpha05
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi02/alpha10
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi02/alpha20
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi02/alpha50
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi05/alpha02
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi05/alpha05
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi05/alpha10
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi05/alpha20
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi05/alpha50
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+
+Saving information to 'output_seed27.hdf5'...
+

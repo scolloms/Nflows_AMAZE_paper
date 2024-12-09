@@ -1,20 +1,38 @@
-000 (159447.000.000) 2024-11-26 11:59:21 Job submitted from host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=schedd_1786199_85d7>
+000 (160505.000.000) 2024-11-28 14:12:31 Job submitted from host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=schedd_1786199_85d7>
 ...
-001 (159447.000.000) 2024-11-26 11:59:30 Job executing on host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=startd_1786199_85d7>
-	SlotName: slot1_2@wiay.astro.gla.ac.uk
-	AvailableGPUs = { GPUs_GPU_ccce0a6d }
-	CondorScratchDir = "/var/lib/condor/execute/dir_2940719"
+001 (160505.000.000) 2024-11-28 14:12:42 Job executing on host: <130.209.45.170:9618?addrs=130.209.45.170-9618+[2001-8b0-92d-821f--2]-9618&alias=hermes.astro.gla.ac.uk&noUDP&sock=startd_46_71da>
+	SlotName: slot1_1@hermes.astro.gla.ac.uk
+	CondorScratchDir = "/var/lib/condor/execute/dir_3739519"
 	Cpus = 1
-	Disk = 4195963
-	GPUs = 1
-	GPUs_GPU_ccce0a6d = [ Id = "GPU-ccce0a6d"; ClockMhz = 1545.0; Capability = 7.5; CoresPerCU = 64; DeviceName = "NVIDIA GeForce RTX 2080 Ti"; DeviceUuid = "ccce0a6d-fcb7-3017-31fe-49f0f1089b6b"; ECCEnabled = false; ComputeUnits = 68; DriverVersion = 12.5; DevicePciBusId = "0000:B1:00.0"; GlobalMemoryMb = 10827; MaxSupportedVersion = 12050 ]
+	Disk = 4195328
+	GPUs = 0
 	Memory = 16384
 ...
-006 (159447.000.000) 2024-11-26 11:59:38 Image size of job updated: 612228
-	598  -  MemoryUsage of job (MB)
-	612228  -  ResidentSetSize of job (KB)
+006 (160505.000.000) 2024-11-28 14:12:50 Image size of job updated: 297752
+	291  -  MemoryUsage of job (MB)
+	297752  -  ResidentSetSize of job (KB)
 ...
-006 (159447.000.000) 2024-11-26 12:04:38 Image size of job updated: 6163508
-	6020  -  MemoryUsage of job (MB)
-	6163508  -  ResidentSetSize of job (KB)
+006 (160505.000.000) 2024-11-28 14:17:52 Image size of job updated: 20517904
+	19964  -  MemoryUsage of job (MB)
+	20442200  -  ResidentSetSize of job (KB)
+...
+005 (160505.000.000) 2024-12-08 09:47:06 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 9 19:40:08, Sys 0 00:06:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 9 19:40:08, Sys 0 00:06:02  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      2.00        1         1 
+	   Disk (KB)            :      1     4194304   4195328 
+	   GPUs                 :                            0 
+	   Memory (MB)          :  19964       16384     16384 
+	   TimeExecute (s)      : 848064                       
+	   TimeSlotBusy (s)     : 848065                       
+
+	Job terminated of its own accord at 2024-12-08T09:47:06Z with exit-code 0.
 ...

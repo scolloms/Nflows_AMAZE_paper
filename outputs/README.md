@@ -22,3 +22,14 @@ And now in discrete_GWTC3/flow and /KDEs.
 First continuous inference run done and looked at results in /data/wiay/2297403c/amaze_model_select/AMAZE_model_selection/notebooks/plot_continuous_result.ipynb. Trying to figure out why the alpha_CE posterior is quite different. The last results I had in /data/wiay/2297403c/amaze_model_select/AMAZE_project_resources/test_production_runs/flows_prod_tests/output_flows_cont.hdf5 were run at a stage where the alpha_CE interpolation was incorrect - I think the interpolator was set up over non-log alpha_CE but then given alpha_CE for interpolation (commit ef80d32932cbdad44a5aa9d22d3091160073d4b0). These flow models also had CE retrained for a discrete inference. But the previous previous results in /AMAZE_project_rescources/continuous_GWTC-3/ I'm not sure why they also rail at alpha_CE=5. 
 
 Checking old flow models which look like they trained slightly better (checked in /data/wiay/2297403c/amaze_model_select/AMAZE_model_selection/notebooks/plot_obs_likelihoods.ipynb). Stopped the KDE models which hadn't started running yet and training a new flow model in inputs/prod_CEtrain.
+
+28-11-24
+
+Resubmitted the continuous and discrete inference with the mixed_flows input normalising flows, this and KDE inference is running with code version 6aa3b0f020f02bb42b16c993e8d39778e25a1f6b on flows_prod branch. The continuous inference outputs are in dir Nflows_AMAZE_paper/outputs/cont_GWTC3/prod_retrainedCE and the discrete inference is in Nflows_AMAZE_paper/outputs/discrete_GWTC3/flow_retrainedCE. APart from the different CE flow, the other flows are the same.
+The KDEs were running with multi_proc on the GPUs, but I'm not sure if this was actually using the GPUs or not, so I removed 3/5 slower jobs and resubmitted on CPU so that the flow jobs can utilise CPU. The GPU jobs are seed 12 and 94 and the others are running on CPU. It's a race to see who is faster.
+
+9-12-24
+
+Checking up on runs, only waiting on 2/5 KDE jobs, but they got evicted and are starrting over after almost being done *upside-down smiley*. I don;t have capacity right now to get them to run on multiple cores.
+
+Going to make plots in plots/prod without these KDE models, so I can update my paper plots.

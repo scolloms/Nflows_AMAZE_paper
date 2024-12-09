@@ -1,0 +1,39 @@
+000 (160206.002.000) 2024-11-27 23:52:31 Job submitted from host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=schedd_1786199_85d7>
+...
+033 (160206.002.000) 2024-11-27 23:53:25 Changing job attribute JobPrio from 0 to 1
+...
+001 (160206.002.000) 2024-11-28 13:11:28 Job executing on host: <130.209.45.193:9618?addrs=130.209.45.193-9618&alias=deimos.astro.gla.ac.uk&noUDP&sock=startd_47_2172>
+	SlotName: slot1_2@deimos.astro.gla.ac.uk
+	AvailableGPUs = { GPUs_GPU_34314e2d }
+	CondorScratchDir = "/var/lib/condor/execute/dir_3549263"
+	Cpus = 1
+	Disk = 4195328
+	GPUs = 1
+	GPUs_GPU_34314e2d = [ Id = "GPU-34314e2d"; ClockMhz = 1695.0; Capability = 8.6; CoresPerCU = 128; DeviceName = "NVIDIA GeForce RTX 3090"; DeviceUuid = "34314e2d-1720-7fa1-dcf6-30072ca54ea3"; ECCEnabled = false; ComputeUnits = 82; DriverVersion = 12.2; DevicePciBusId = "0000:02:00.0"; GlobalMemoryMb = 24260; MaxSupportedVersion = 12020 ]
+	Memory = 16384
+...
+006 (160206.002.000) 2024-11-28 13:11:37 Image size of job updated: 2
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+005 (160206.002.000) 2024-12-02 00:06:42 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated Assigned
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      2     4194304   4195328 
+	   GPUs                 :      0.53        1         1 "GPU-34314e2d"
+	   GpusMemory (MB)      :   3902                       
+	   Memory (MB)          :      0       16384     16384 
+	   TimeExecute (s)      : 298514                       
+	   TimeSlotBusy (s)     : 298514                       
+
+	Job terminated of its own accord at 2024-12-02T00:06:42Z with exit-code 0.
+...

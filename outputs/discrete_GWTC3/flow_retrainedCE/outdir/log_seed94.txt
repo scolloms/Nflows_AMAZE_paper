@@ -1,0 +1,49 @@
+000 (160207.002.000) 2024-11-27 23:55:25 Job submitted from host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=schedd_1786199_85d7>
+...
+001 (160207.002.000) 2024-12-03 19:17:27 Job executing on host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=startd_1786199_85d7>
+	SlotName: slot1_1@wiay.astro.gla.ac.uk
+	AvailableGPUs = { GPUs_GPU_916f8cd9 }
+	CondorScratchDir = "/var/lib/condor/execute/dir_1710846"
+	Cpus = 1
+	Disk = 4195963
+	GPUs = 1
+	GPUs_GPU_916f8cd9 = [ Id = "GPU-916f8cd9"; ClockMhz = 1380.0; Capability = 7.0; CoresPerCU = 64; DeviceName = "Tesla V100-PCIE-32GB"; DeviceUuid = "916f8cd9-482d-5a9d-e82e-dc4416936330"; ECCEnabled = true; ComputeUnits = 80; DriverVersion = 12.5; DevicePciBusId = "0000:3B:00.0"; GlobalMemoryMb = 32494; MaxSupportedVersion = 12050 ]
+	Memory = 16384
+...
+006 (160207.002.000) 2024-12-03 19:17:35 Image size of job updated: 855056
+	836  -  MemoryUsage of job (MB)
+	855056  -  ResidentSetSize of job (KB)
+...
+006 (160207.002.000) 2024-12-03 19:22:35 Image size of job updated: 5823284
+	5687  -  MemoryUsage of job (MB)
+	5823284  -  ResidentSetSize of job (KB)
+...
+006 (160207.002.000) 2024-12-03 19:27:36 Image size of job updated: 5845932
+	5709  -  MemoryUsage of job (MB)
+	5845932  -  ResidentSetSize of job (KB)
+...
+006 (160207.002.000) 2024-12-03 19:32:37 Image size of job updated: 5846008
+	5709  -  MemoryUsage of job (MB)
+	5846008  -  ResidentSetSize of job (KB)
+...
+005 (160207.002.000) 2024-12-07 07:22:45 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 3 11:36:31, Sys 0 00:33:48  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 3 11:36:31, Sys 0 00:33:48  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated Assigned
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      2     4194304   4195963 
+	   GPUs                 :      0.73        1         1 "GPU-916f8cd9"
+	   GpusMemory (MB)      :   5356                       
+	   Memory (MB)          :   5709       16384     16384 
+	   TimeExecute (s)      : 302718                       
+	   TimeSlotBusy (s)     : 302718                       
+
+	Job terminated of its own accord at 2024-12-07T07:22:45Z with exit-code 0.
+...

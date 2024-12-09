@@ -1,2 +1,69 @@
 000 (159447.004.000) 2024-11-26 11:59:21 Job submitted from host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=schedd_1786199_85d7>
 ...
+001 (159447.004.000) 2024-11-27 05:18:14 Job executing on host: <130.209.45.56:9618?addrs=130.209.45.56-9618&alias=serenity.astro.gla.ac.uk&noUDP&sock=startd_47_2172>
+	SlotName: slot1_1@serenity.astro.gla.ac.uk
+	AvailableGPUs = { GPUs_GPU_625f6b03 }
+	CondorScratchDir = "/var/lib/condor/execute/dir_2449844"
+	Cpus = 1
+	Disk = 4195328
+	GPUs = 1
+	GPUs_GPU_625f6b03 = [ Id = "GPU-625f6b03"; ClockMhz = 1695.0; Capability = 8.6; CoresPerCU = 128; DeviceName = "NVIDIA GeForce RTX 3090"; DeviceUuid = "625f6b03-2809-23ef-06f5-609bcf7f9386"; ECCEnabled = false; ComputeUnits = 82; DriverVersion = 12.2; DevicePciBusId = "0000:68:00.0"; GlobalMemoryMb = 24257; MaxSupportedVersion = 12020 ]
+	Memory = 16384
+...
+006 (159447.004.000) 2024-11-27 05:18:23 Image size of job updated: 1
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+006 (159447.004.000) 2024-12-06 09:50:46 Image size of job updated: 88048
+	21  -  MemoryUsage of job (MB)
+	21004  -  ResidentSetSize of job (KB)
+...
+022 (159447.004.000) 2024-12-09 13:34:40 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_1@serenity.astro.gla.ac.uk <130.209.45.56:9618?addrs=130.209.45.56-9618&alias=serenity.astro.gla.ac.uk&noUDP&sock=startd_47_2172>
+...
+024 (159447.004.000) 2024-12-09 13:34:50 Job reconnection failed
+    Job not found at execution machine
+    Can not reconnect to slot1_1@serenity.astro.gla.ac.uk, rescheduling job
+...
+004 (159447.004.000) 2024-12-09 14:14:40 Job was evicted.
+	(0) CPU times
+		Usr 0 00:00:01, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Job not found at execution machine
+	Partitionable Resources :     Usage  Request Allocated Assigned
+	   Cpus                 :      0.91        1         1 
+	   Disk (KB)            :      1     4194304   4195328 
+	   GPUs                 :      0.60        1         1 "GPU-625f6b03"
+	   GpusMemory (MB)      :  24554                       
+	   Memory (MB)          :     21       16384     16384 
+	   TimeExecute (s)      : 793796                       
+...
+001 (159447.004.000) 2024-12-09 14:16:23 Job executing on host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=startd_1786199_85d7>
+	SlotName: slot1_2@wiay.astro.gla.ac.uk
+	AvailableGPUs = { GPUs_GPU_916f8cd9 }
+	CondorScratchDir = "/var/lib/condor/execute/dir_3993393"
+	Cpus = 1
+	Disk = 4195963
+	GPUs = 1
+	GPUs_GPU_916f8cd9 = [ Id = "GPU-916f8cd9"; ClockMhz = 1380.0; Capability = 7.0; CoresPerCU = 64; DeviceName = "Tesla V100-PCIE-32GB"; DeviceUuid = "916f8cd9-482d-5a9d-e82e-dc4416936330"; ECCEnabled = true; ComputeUnits = 80; DriverVersion = 12.5; DevicePciBusId = "0000:3B:00.0"; GlobalMemoryMb = 32494; MaxSupportedVersion = 12050 ]
+	Memory = 16384
+...
+006 (159447.004.000) 2024-12-09 14:16:31 Image size of job updated: 621960
+	608  -  MemoryUsage of job (MB)
+	621960  -  ResidentSetSize of job (KB)
+...
+006 (159447.004.000) 2024-12-09 14:21:31 Image size of job updated: 5262192
+	5139  -  MemoryUsage of job (MB)
+	5262192  -  ResidentSetSize of job (KB)
+...
+006 (159447.004.000) 2024-12-09 14:26:32 Image size of job updated: 16358860
+	15976  -  MemoryUsage of job (MB)
+	16358860  -  ResidentSetSize of job (KB)
+...
+006 (159447.004.000) 2024-12-09 14:41:33 Image size of job updated: 16359116
+	15976  -  MemoryUsage of job (MB)
+	16359116  -  ResidentSetSize of job (KB)
+...

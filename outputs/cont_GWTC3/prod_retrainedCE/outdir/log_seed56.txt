@@ -1,0 +1,55 @@
+000 (160206.003.000) 2024-11-27 23:52:31 Job submitted from host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=schedd_1786199_85d7>
+...
+033 (160206.003.000) 2024-11-27 23:53:27 Changing job attribute JobPrio from 0 to 1
+...
+001 (160206.003.000) 2024-11-28 14:14:41 Job executing on host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=startd_1786199_85d7>
+	SlotName: slot1_4@wiay.astro.gla.ac.uk
+	AvailableGPUs = { GPUs_GPU_df018c53 }
+	CondorScratchDir = "/var/lib/condor/execute/dir_1124705"
+	Cpus = 1
+	Disk = 4195963
+	GPUs = 1
+	GPUs_GPU_df018c53 = [ Id = "GPU-df018c53"; ClockMhz = 1545.0; Capability = 7.5; CoresPerCU = 64; DeviceName = "NVIDIA GeForce RTX 2080 Ti"; DeviceUuid = "df018c53-b27b-0d21-a520-70ec0819ac12"; ECCEnabled = false; ComputeUnits = 68; DriverVersion = 12.5; DevicePciBusId = "0000:D9:00.0"; GlobalMemoryMb = 10827; MaxSupportedVersion = 12050 ]
+	Memory = 16384
+...
+006 (160206.003.000) 2024-11-28 14:14:50 Image size of job updated: 966584
+	944  -  MemoryUsage of job (MB)
+	966584  -  ResidentSetSize of job (KB)
+...
+006 (160206.003.000) 2024-11-28 14:19:51 Image size of job updated: 5793292
+	5658  -  MemoryUsage of job (MB)
+	5793292  -  ResidentSetSize of job (KB)
+...
+006 (160206.003.000) 2024-11-28 14:29:51 Image size of job updated: 5807132
+	5672  -  MemoryUsage of job (MB)
+	5807132  -  ResidentSetSize of job (KB)
+...
+006 (160206.003.000) 2024-11-28 14:34:52 Image size of job updated: 5819704
+	5684  -  MemoryUsage of job (MB)
+	5819704  -  ResidentSetSize of job (KB)
+...
+006 (160206.003.000) 2024-11-28 14:59:55 Image size of job updated: 5819736
+	5684  -  MemoryUsage of job (MB)
+	5819736  -  ResidentSetSize of job (KB)
+...
+005 (160206.003.000) 2024-12-04 19:43:09 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 4 04:26:57, Sys 2 01:12:17  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 4 04:26:57, Sys 2 01:12:17  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated Assigned
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      2     4194304   4195963 
+	   GPUs                 :      0.52        1         1 "GPU-df018c53"
+	   GpusMemory (MB)      :   4559                       
+	   Memory (MB)          :   5684       16384     16384 
+	   TimeExecute (s)      : 538108                       
+	   TimeSlotBusy (s)     : 538108                       
+
+	Job terminated of its own accord at 2024-12-04T19:43:09Z with exit-code 0.
+...

@@ -1,2 +1,37 @@
 000 (159447.002.000) 2024-11-26 11:59:21 Job submitted from host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=schedd_1786199_85d7>
 ...
+001 (159447.002.000) 2024-11-26 23:57:14 Job executing on host: <130.209.45.226:9618?addrs=130.209.45.226-9618&alias=muck.astro.gla.ac.uk&noUDP&sock=startd_46_71da>
+	SlotName: slot1_1@muck.astro.gla.ac.uk
+	AvailableGPUs = { GPUs_GPU_65408344 }
+	CondorScratchDir = "/var/lib/condor/execute/dir_3811775"
+	Cpus = 1
+	Disk = 4195328
+	GPUs = 1
+	GPUs_GPU_65408344 = [ Id = "GPU-65408344"; ClockMhz = 1785.0; Capability = 8.6; CoresPerCU = 128; DeviceName = "NVIDIA GeForce RTX 3090"; DeviceUuid = "65408344-a5d4-fcd7-1df1-b57c67d81168"; ECCEnabled = false; ComputeUnits = 82; DriverVersion = 12.2; DevicePciBusId = "0000:08:00.0"; GlobalMemoryMb = 24260; MaxSupportedVersion = 12020 ]
+	Memory = 16384
+...
+006 (159447.002.000) 2024-11-26 23:57:22 Image size of job updated: 1
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+005 (159447.002.000) 2024-12-06 01:56:38 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated Assigned
+	   Cpus                 :      1.93        1         1 
+	   Disk (KB)            :      1     4194304   4195328 
+	   GPUs                 :      0           1         1 "GPU-65408344"
+	   GpusMemory (MB)      :    321                       
+	   Memory (MB)          :      0       16384     16384 
+	   TimeExecute (s)      : 784764                       
+	   TimeSlotBusy (s)     : 784764                       
+
+	Job terminated of its own accord at 2024-12-06T01:56:38Z with exit-code 0.
+...

@@ -1,0 +1,72 @@
+000 (160207.003.000) 2024-11-27 23:55:25 Job submitted from host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=schedd_1786199_85d7>
+...
+001 (160207.003.000) 2024-12-04 10:05:10 Job executing on host: <130.209.45.193:9618?addrs=130.209.45.193-9618&alias=deimos.astro.gla.ac.uk&noUDP&sock=startd_46_71da>
+	SlotName: slot1_1@deimos.astro.gla.ac.uk
+	AvailableGPUs = { GPUs_GPU_34314e2d }
+	CondorScratchDir = "/var/lib/condor/execute/dir_131"
+	Cpus = 1
+	Disk = 4195328
+	GPUs = 1
+	GPUs_GPU_34314e2d = [ Id = "GPU-34314e2d"; ClockMhz = 1695.0; Capability = 8.6; CoresPerCU = 128; DeviceName = "NVIDIA GeForce RTX 3090"; DeviceUuid = "34314e2d-1720-7fa1-dcf6-30072ca54ea3"; ECCEnabled = false; ComputeUnits = 82; DriverVersion = 12.2; DevicePciBusId = "0000:02:00.0"; GlobalMemoryMb = 24260; MaxSupportedVersion = 12020 ]
+	Memory = 16384
+...
+006 (160207.003.000) 2024-12-04 10:05:18 Image size of job updated: 2
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+022 (160207.003.000) 2024-12-04 10:06:08 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_1@deimos.astro.gla.ac.uk <130.209.45.193:9618?addrs=130.209.45.193-9618&alias=deimos.astro.gla.ac.uk&noUDP&sock=startd_46_71da>
+...
+024 (160207.003.000) 2024-12-04 10:46:08 Job reconnection failed
+    Job disconnected too long: JobLeaseDuration (2400 seconds) expired
+    Can not reconnect to slot1_1@deimos.astro.gla.ac.uk, rescheduling job
+...
+004 (160207.003.000) 2024-12-04 10:46:18 Job was evicted.
+	(0) CPU times
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Job disconnected too long: JobLeaseDuration (2400 seconds) expired
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :        2  4194304   4195328 
+	   GPUs                 :                 1         1 "GPU-34314e2d"
+	   Memory (MB)          :        0    16384     16384 
+...
+001 (160207.003.000) 2024-12-04 10:49:26 Job executing on host: <130.209.45.193:9618?addrs=130.209.45.193-9618&alias=deimos.astro.gla.ac.uk&noUDP&sock=startd_46_71da>
+	SlotName: slot1_2@deimos.astro.gla.ac.uk
+	AvailableGPUs = { GPUs_GPU_9ed99095 }
+	CondorScratchDir = "/var/lib/condor/execute/dir_177"
+	Cpus = 1
+	Disk = 4195328
+	GPUs = 1
+	GPUs_GPU_9ed99095 = [ Id = "GPU-9ed99095"; ClockMhz = 1695.0; Capability = 8.6; CoresPerCU = 128; DeviceName = "NVIDIA GeForce RTX 3090"; DeviceUuid = "9ed99095-ea7d-ae22-8aa3-a439270c7875"; ECCEnabled = false; ComputeUnits = 82; DriverVersion = 12.2; DevicePciBusId = "0000:01:00.0"; GlobalMemoryMb = 24260; MaxSupportedVersion = 12020 ]
+	Memory = 16384
+...
+006 (160207.003.000) 2024-12-06 09:49:25 Image size of job updated: 78952
+	42  -  MemoryUsage of job (MB)
+	42976  -  ResidentSetSize of job (KB)
+...
+005 (160207.003.000) 2024-12-07 18:29:14 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated Assigned
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      2     4194304   4195328 
+	   GPUs                 :      0.64        1         1 "GPU-9ed99095"
+	   GpusMemory (MB)      :   3902                       
+	   Memory (MB)          :     42       16384     16384 
+	   TimeExecute (s)      : 286788                       
+	   TimeSlotBusy (s)     : 286788                       
+
+	Job terminated of its own accord at 2024-12-07T18:29:14Z with exit-code 0.
+...

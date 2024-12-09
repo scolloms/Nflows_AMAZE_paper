@@ -1,2 +1,50 @@
-000 (159447.003.000) 2024-11-26 11:59:21 Job submitted from host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=schedd_1786199_85d7>
+000 (160508.001.000) 2024-11-28 14:16:37 Job submitted from host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=schedd_1786199_85d7>
+...
+001 (160508.001.000) 2024-11-28 14:16:47 Job executing on host: <130.209.45.56:9618?addrs=130.209.45.56-9618&alias=serenity.astro.gla.ac.uk&noUDP&sock=startd_47_2172>
+	SlotName: slot1_3@serenity.astro.gla.ac.uk
+	AvailableGPUs = {  }
+	CondorScratchDir = "/var/lib/condor/execute/dir_2455941"
+	Cpus = 1
+	Disk = 4195328
+	GPUs = 0
+	Memory = 16384
+...
+006 (160508.001.000) 2024-11-28 14:16:56 Image size of job updated: 1
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+006 (160508.001.000) 2024-12-06 09:51:17 Image size of job updated: 60516
+	20  -  MemoryUsage of job (MB)
+	19684  -  ResidentSetSize of job (KB)
+...
+022 (160508.001.000) 2024-12-09 13:34:40 Job disconnected, attempting to reconnect
+    Socket between submit and execute hosts closed unexpectedly
+    Trying to reconnect to slot1_3@serenity.astro.gla.ac.uk <130.209.45.56:9618?addrs=130.209.45.56-9618&alias=serenity.astro.gla.ac.uk&noUDP&sock=startd_47_2172>
+...
+024 (160508.001.000) 2024-12-09 13:34:50 Job reconnection failed
+    Job not found at execution machine
+    Can not reconnect to slot1_3@serenity.astro.gla.ac.uk, rescheduling job
+...
+004 (160508.001.000) 2024-12-09 14:14:40 Job was evicted.
+	(0) CPU times
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Job not found at execution machine
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.84        1         1 
+	   Disk (KB)            :      1     4194304   4195328 
+	   GPUs                 :                            0 
+	   Memory (MB)          :     20       16384     16384 
+	   TimeExecute (s)      : 675259                       
+...
+001 (160508.001.000) 2024-12-09 14:16:23 Job executing on host: <130.209.45.226:9618?addrs=130.209.45.226-9618&alias=muck.astro.gla.ac.uk&noUDP&sock=startd_46_71da>
+	SlotName: slot1_2@muck.astro.gla.ac.uk
+	AvailableGPUs = {  }
+	CondorScratchDir = "/var/lib/condor/execute/dir_3880856"
+	Cpus = 1
+	Disk = 4195328
+	GPUs = 0
+	Memory = 16384
 ...

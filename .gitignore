@@ -2,3 +2,6 @@
 /inputs/GWTC-3/events_IMR
 /inputs/GWTC-3/removed
 /inputs/flow_models/test_121124
+/outputs/cont_GWTC3/production
+/plots/pre_prod
+/plots/test_121124
