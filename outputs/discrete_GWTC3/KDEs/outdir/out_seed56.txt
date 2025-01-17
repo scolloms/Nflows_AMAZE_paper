@@ -15,3 +15,128 @@ GW170823_131358 GW190519_153544 GW190929_012149 GW200202_154313 GW190602_175927 
 
 Freezing sample evaluations in their respective models...
   CE/chi00/alpha02
+  CE/chi00/alpha05
+  CE/chi00/alpha10
+  CE/chi00/alpha20
+  CE/chi00/alpha50
+  CE/chi01/alpha02
+  CE/chi01/alpha05
+  CE/chi01/alpha10
+  CE/chi01/alpha20
+  CE/chi01/alpha50
+  CE/chi02/alpha02
+  CE/chi02/alpha05
+  CE/chi02/alpha10
+  CE/chi02/alpha20
+  CE/chi02/alpha50
+  CE/chi05/alpha02
+  CE/chi05/alpha05
+  CE/chi05/alpha10
+  CE/chi05/alpha20
+  CE/chi05/alpha50
+  CHE/chi00
+  CHE/chi01
+  CHE/chi02
+  CHE/chi05
+  GC/chi00
+  GC/chi01
+  GC/chi02
+  GC/chi05
+  NSC/chi00
+  NSC/chi01
+  NSC/chi02
+  NSC/chi05
+  SMT/chi00
+  SMT/chi01
+  SMT/chi02
+  SMT/chi05
+Done freezing KDE evaluations of observations!
+
+Sampling...
+
+Sampling complete!
+
+Sample breakdown:
+  Model chi00/alpha02
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi00/alpha05
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi00/alpha10
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi00/alpha20
+     597 samples
+     betas=[('CE', 0.918), ('CHE', 0.007), ('GC', 0.013), ('NSC', 0.013), ('SMT', 0.048)]
+     detectable betas=[]
+  Model chi00/alpha50
+     19426 samples
+     betas=[('CE', 0.919), ('CHE', 0.005), ('GC', 0.015), ('NSC', 0.012), ('SMT', 0.048)]
+     detectable betas=[]
+  Model chi01/alpha02
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi01/alpha05
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi01/alpha10
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi01/alpha20
+     761 samples
+     betas=[('CE', 0.903), ('CHE', 0.006), ('GC', 0.045), ('NSC', 0.021), ('SMT', 0.025)]
+     detectable betas=[]
+  Model chi01/alpha50
+     129216 samples
+     betas=[('CE', 0.903), ('CHE', 0.006), ('GC', 0.044), ('NSC', 0.018), ('SMT', 0.029)]
+     detectable betas=[]
+  Model chi02/alpha02
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi02/alpha05
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi02/alpha10
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi02/alpha20
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi02/alpha50
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi05/alpha02
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi05/alpha05
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi05/alpha10
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi05/alpha20
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+  Model chi05/alpha50
+     0 samples
+     betas=[('CE', nan), ('CHE', nan), ('GC', nan), ('NSC', nan), ('SMT', nan)]
+     detectable betas=[]
+
+Saving information to 'output_seed56.hdf5'...
+
