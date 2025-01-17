@@ -1,0 +1,38 @@
+000 (160942.000.000) 2024-12-10 11:16:39 Job submitted from host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=schedd_1786199_85d7>
+...
+001 (160942.000.000) 2024-12-10 11:16:48 Job executing on host: <130.209.45.170:9618?addrs=130.209.45.170-9618+[2001-8b0-92d-821f--2]-9618&alias=hermes.astro.gla.ac.uk&noUDP&sock=startd_46_71da>
+	SlotName: slot1_3@hermes.astro.gla.ac.uk
+	CondorScratchDir = "/var/lib/condor/execute/dir_3790723"
+	Cpus = 1
+	Disk = 4195328
+	GPUs = 0
+	Memory = 2048
+...
+006 (160942.000.000) 2024-12-10 11:16:56 Image size of job updated: 389400
+	381  -  MemoryUsage of job (MB)
+	389400  -  ResidentSetSize of job (KB)
+...
+006 (160942.000.000) 2024-12-10 11:21:57 Image size of job updated: 8434376
+	8040  -  MemoryUsage of job (MB)
+	8232744  -  ResidentSetSize of job (KB)
+...
+005 (160942.000.000) 2024-12-10 11:26:25 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:08:53, Sys 0 00:00:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:08:53, Sys 0 00:00:02  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00        1         1 
+	   Disk (KB)            :     1     4194304   4195328 
+	   GPUs                 :                           0 
+	   Memory (MB)          :  8040        2048      2048 
+	   TimeExecute (s)      :   577                       
+	   TimeSlotBusy (s)     :   578                       
+
+	Job terminated of its own accord at 2024-12-10T11:26:25Z with exit-code 1.
+...

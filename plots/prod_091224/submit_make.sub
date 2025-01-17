@@ -1,0 +1,19 @@
+# Typical submit file options
+universe = vanilla
+log = logs/$(Cluster).$(Process).log
+error = logs/$(Cluster).$(Process).err
+output = logs/$(Cluster).$(Process).out
+
+# Fill in with your own script, arguments and input files
+# Note that you don't need to transfer any software
+executable = make_flow_plots.sh
+arguments =
+transfer_input_files = 
+
+# Resource requirements
+request_cpus = 1
+request_memory = 2GB
+request_disk = 4GB
+
+# Number of jobs
+queue 1

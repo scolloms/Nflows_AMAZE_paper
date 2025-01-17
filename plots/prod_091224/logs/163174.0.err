@@ -1,0 +1,64 @@
+PyCBC.libutils: pkg-config call failed, setting NO_PKGCONFIG=1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:12<00:00, 12.53s/it]100%|██████████| 1/1 [00:12<00:00, 12.53s/it]
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:02<00:46,  2.47s/it] 10%|█         | 2/20 [00:03<00:31,  1.74s/it] 15%|█▌        | 3/20 [00:04<00:22,  1.35s/it] 20%|██        | 4/20 [00:05<00:17,  1.12s/it] 25%|██▌       | 5/20 [00:06<00:16,  1.08s/it] 30%|███       | 6/20 [00:07<00:14,  1.07s/it] 35%|███▌      | 7/20 [00:08<00:12,  1.02it/s] 40%|████      | 8/20 [00:09<00:11,  1.08it/s] 45%|████▌     | 9/20 [00:10<00:10,  1.02it/s] 50%|█████     | 10/20 [00:11<00:09,  1.02it/s] 55%|█████▌    | 11/20 [00:12<00:09,  1.02s/it] 60%|██████    | 12/20 [00:13<00:07,  1.03it/s] 65%|██████▌   | 13/20 [00:13<00:06,  1.09it/s] 70%|███████   | 14/20 [00:15<00:06,  1.02s/it] 75%|███████▌  | 15/20 [00:16<00:05,  1.04s/it] 80%|████████  | 16/20 [00:17<00:03,  1.02it/s] 85%|████████▌ | 17/20 [00:17<00:02,  1.08it/s] 90%|█████████ | 18/20 [00:18<00:01,  1.11it/s] 95%|█████████▌| 19/20 [00:19<00:00,  1.04it/s]100%|██████████| 20/20 [00:20<00:00,  1.08it/s]100%|██████████| 20/20 [00:20<00:00,  1.03s/it]
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:03<01:12,  3.79s/it] 10%|█         | 2/20 [00:07<01:06,  3.69s/it] 15%|█▌        | 3/20 [00:11<01:02,  3.65s/it] 20%|██        | 4/20 [00:14<00:58,  3.63s/it] 25%|██▌       | 5/20 [00:18<00:54,  3.63s/it] 30%|███       | 6/20 [00:21<00:50,  3.60s/it] 35%|███▌      | 7/20 [00:25<00:46,  3.60s/it] 40%|████      | 8/20 [00:28<00:43,  3.59s/it] 45%|████▌     | 9/20 [00:32<00:39,  3.59s/it] 50%|█████     | 10/20 [00:36<00:35,  3.57s/it] 55%|█████▌    | 11/20 [00:39<00:31,  3.55s/it] 60%|██████    | 12/20 [00:43<00:28,  3.53s/it] 65%|██████▌   | 13/20 [00:46<00:24,  3.53s/it] 70%|███████   | 14/20 [00:50<00:21,  3.52s/it] 75%|███████▌  | 15/20 [00:53<00:17,  3.60s/it] 80%|████████  | 16/20 [00:57<00:14,  3.71s/it] 85%|████████▌ | 17/20 [01:01<00:11,  3.80s/it] 90%|█████████ | 18/20 [01:05<00:07,  3.80s/it] 95%|█████████▌| 19/20 [01:09<00:03,  3.73s/it]100%|██████████| 20/20 [01:12<00:00,  3.74s/it]100%|██████████| 20/20 [01:12<00:00,  3.65s/it]
+lstat(./luatex) failed: ./luatex: No such file or directory
+kpathsea: Can't get directory of program name: ./luatex
+Traceback (most recent call last):
+  File "/data/wiay/2297403c/amaze_model_select/AMAZE_model_selection/plot/flow_results/make_paper_plots.py", line 54, in <module>
+    plot_llh_ratio_CE(flow_dir, outdir=outdir, justplot=justplot)
+  File "/data/wiay/2297403c/amaze_model_select/AMAZE_model_selection/plot/flow_results/plot_functions.py", line 530, in plot_llh_ratio_CE
+    fig.tight_layout(pad=1.3)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/figure.py", line 3544, in tight_layout
+    engine.execute(self)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/layout_engine.py", line 184, in execute
+    kwargs = get_tight_layout_figure(
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/_tight_layout.py", line 266, in get_tight_layout_figure
+    kwargs = _auto_adjust_subplotpars(fig, renderer,
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/_tight_layout.py", line 82, in _auto_adjust_subplotpars
+    bb += [martist._get_tightbbox_for_layout_only(ax, renderer)]
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/artist.py", line 1415, in _get_tightbbox_for_layout_only
+    return obj.get_tightbbox(*args, **{**kwargs, "for_layout_only": True})
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/axes/_base.py", line 4385, in get_tightbbox
+    ba = martist._get_tightbbox_for_layout_only(axis, renderer)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/artist.py", line 1415, in _get_tightbbox_for_layout_only
+    return obj.get_tightbbox(*args, **{**kwargs, "for_layout_only": True})
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/axis.py", line 1325, in get_tightbbox
+    self._update_label_position(renderer)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/axis.py", line 2304, in _update_label_position
+    bboxes, bboxes2 = self._get_tick_boxes_siblings(renderer=renderer)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/axis.py", line 2100, in _get_tick_boxes_siblings
+    tlb, tlb2 = axis._get_ticklabel_bboxes(ticks_to_draw, renderer)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/axis.py", line 1304, in _get_ticklabel_bboxes
+    return ([tick.label1.get_window_extent(renderer)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/axis.py", line 1304, in <listcomp>
+    return ([tick.label1.get_window_extent(renderer)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/text.py", line 959, in get_window_extent
+    bbox, info, descent = self._get_layout(self._renderer)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/text.py", line 378, in _get_layout
+    _, lp_h, lp_d = _get_text_metrics_with_cache(
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/text.py", line 97, in _get_text_metrics_with_cache
+    return _get_text_metrics_with_cache_impl(
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/text.py", line 105, in _get_text_metrics_with_cache_impl
+    return renderer_ref().get_text_width_height_descent(text, fontprop, ismath)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/backends/backend_agg.py", line 226, in get_text_width_height_descent
+    return super().get_text_width_height_descent(s, prop, ismath)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/backend_bases.py", line 645, in get_text_width_height_descent
+    return self.get_texmanager().get_text_width_height_descent(
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/texmanager.py", line 371, in get_text_width_height_descent
+    page, = dvi
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/dviread.py", line 296, in __iter__
+    while self._read():
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/dviread.py", line 375, in _read
+    self._dtable[byte](self, byte)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/dviread.py", line 227, in wrapper
+    return method(self, *[f(self, byte-min) for f in get_args])
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/dviread.py", line 526, in _fnt_def
+    self._fnt_def_real(k, c, s, d, a, l)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/dviread.py", line 531, in _fnt_def_real
+    tfm = _tfmfile(fontname)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/dviread.py", line 1132, in _fontfile
+    return cls(_find_tex_file(texname + suffix))
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/dviread.py", line 1110, in _find_tex_file
+    raise FileNotFoundError(
+FileNotFoundError: Matplotlib's TeX implementation searched for a file named 'cmr8.tfm' in your texmf tree, but could not find it

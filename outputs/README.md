@@ -33,3 +33,19 @@ The KDEs were running with multi_proc on the GPUs, but I'm not sure if this was 
 Checking up on runs, only waiting on 2/5 KDE jobs, but they got evicted and are starrting over after almost being done *upside-down smiley*. I don;t have capacity right now to get them to run on multiple cores.
 
 Going to make plots in plots/prod without these KDE models, so I can update my paper plots.
+
+15-1-25
+
+Welcome to the new year. 
+
+Finished results are in:
+Nflows_AMAZE_paper/outputs/cont_GWTC3/prod_retrainedCE
+Nflows_AMAZE_paper/outputs/discrete_GWTC3/flow_retrainedCE
+Nflows_AMAZE_paper/outputs/discrete_GWTC3/KDEs
+
+All inference is finished, most of the plots are made. Deciding what population to make in Fig. 1, current one is chib=0, alphaCE=2.
+
+I was reminded that Tex doesn't work with the condor submission, so plot generation is by generating results on condor and then plotting just with bash on terminal, with --justplot.
+
+Remade llh_ratio plot in prod_091224 with mixed_models and new contours, though labels need fixing.
+Also ran calculate KLS with 10000 points from the training samples (10000 p_flow,p_KDE values), saved values of the flow||model and KDE||model to the Nflows_AMAZE_paper/plots/prod_091224/data directory, then saved these in the macros notebook too.

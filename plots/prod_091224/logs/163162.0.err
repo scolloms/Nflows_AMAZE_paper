@@ -1,0 +1,67 @@
+PyCBC.libutils: pkg-config call failed, setting NO_PKGCONFIG=1
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:16,  1.17it/s] 10%|█         | 2/20 [00:01<00:14,  1.24it/s] 15%|█▌        | 3/20 [00:02<00:13,  1.29it/s] 20%|██        | 4/20 [00:03<00:12,  1.32it/s] 25%|██▌       | 5/20 [00:04<00:12,  1.15it/s] 30%|███       | 6/20 [00:05<00:12,  1.11it/s] 35%|███▌      | 7/20 [00:06<00:12,  1.08it/s] 40%|████      | 8/20 [00:07<00:11,  1.06it/s] 45%|████▌     | 9/20 [00:07<00:09,  1.11it/s] 50%|█████     | 10/20 [00:08<00:09,  1.10it/s] 55%|█████▌    | 11/20 [00:09<00:08,  1.07it/s] 60%|██████    | 12/20 [00:10<00:07,  1.08it/s] 65%|██████▌   | 13/20 [00:11<00:06,  1.07it/s] 70%|███████   | 14/20 [00:12<00:06,  1.04s/it] 75%|███████▌  | 15/20 [00:13<00:05,  1.03s/it] 80%|████████  | 16/20 [00:15<00:04,  1.10s/it] 85%|████████▌ | 17/20 [00:16<00:03,  1.21s/it] 90%|█████████ | 18/20 [00:18<00:02,  1.42s/it] 95%|█████████▌| 19/20 [00:19<00:01,  1.27s/it]100%|██████████| 20/20 [00:20<00:00,  1.15s/it]100%|██████████| 20/20 [00:20<00:00,  1.02s/it]
+WARNING:root:Pandas support in corner is deprecated; use ArviZ directly
+lstat(./luatex) failed: ./luatex: No such file or directory
+kpathsea: Can't get directory of program name: ./luatex
+Traceback (most recent call last):
+  File "/data/wiay/2297403c/amaze_model_select/AMAZE_model_selection/plot/flow_results/make_paper_plots.py", line 51, in <module>
+    make_pop_corner(channel, hyperparam_idxs, justplot=justplot, flow_dir=flow_dir, conditional=conditional, outdir=outdir, plot_KDE=args.plot_KDE)
+  File "/data/wiay/2297403c/amaze_model_select/AMAZE_model_selection/plot/flow_results/plot_functions.py", line 205, in make_pop_corner
+    plt.savefig(f"{outdir}/pdfs/{channel_label}_flowKDEmodel_corner_chib{hyperparam_idxs[0]}.pdf")
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/pyplot.py", line 1023, in savefig
+    res = fig.savefig(*args, **kwargs)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/figure.py", line 3378, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/backend_bases.py", line 2342, in print_figure
+    self.figure.draw(renderer)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/figure.py", line 3175, in draw
+    mimage._draw_list_compositing_images(
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/image.py", line 131, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/axes/_base.py", line 3064, in draw
+    mimage._draw_list_compositing_images(
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/image.py", line 131, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/axis.py", line 1377, in draw
+    tlb1, tlb2 = self._get_ticklabel_bboxes(ticks_to_draw, renderer)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/axis.py", line 1304, in _get_ticklabel_bboxes
+    return ([tick.label1.get_window_extent(renderer)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/axis.py", line 1304, in <listcomp>
+    return ([tick.label1.get_window_extent(renderer)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/text.py", line 959, in get_window_extent
+    bbox, info, descent = self._get_layout(self._renderer)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/text.py", line 378, in _get_layout
+    _, lp_h, lp_d = _get_text_metrics_with_cache(
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/text.py", line 97, in _get_text_metrics_with_cache
+    return _get_text_metrics_with_cache_impl(
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/text.py", line 105, in _get_text_metrics_with_cache_impl
+    return renderer_ref().get_text_width_height_descent(text, fontprop, ismath)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/backends/_backend_pdf_ps.py", line 112, in get_text_width_height_descent
+    return super().get_text_width_height_descent(s, prop, ismath)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/backend_bases.py", line 645, in get_text_width_height_descent
+    return self.get_texmanager().get_text_width_height_descent(
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/texmanager.py", line 371, in get_text_width_height_descent
+    page, = dvi
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/dviread.py", line 296, in __iter__
+    while self._read():
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/dviread.py", line 375, in _read
+    self._dtable[byte](self, byte)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/dviread.py", line 227, in wrapper
+    return method(self, *[f(self, byte-min) for f in get_args])
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/dviread.py", line 526, in _fnt_def
+    self._fnt_def_real(k, c, s, d, a, l)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/dviread.py", line 531, in _fnt_def_real
+    tfm = _tfmfile(fontname)
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/dviread.py", line 1132, in _fontfile
+    return cls(_find_tex_file(texname + suffix))
+  File "/data/wiay/2297403c/conda_envs/amaze/lib/python3.10/site-packages/matplotlib/dviread.py", line 1110, in _find_tex_file
+    raise FileNotFoundError(
+FileNotFoundError: Matplotlib's TeX implementation searched for a file named 'cmr8.tfm' in your texmf tree, but could not find it
