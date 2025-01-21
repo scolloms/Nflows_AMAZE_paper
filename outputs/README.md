@@ -49,3 +49,7 @@ I was reminded that Tex doesn't work with the condor submission, so plot generat
 
 Remade llh_ratio plot in prod_091224 with mixed_models and new contours, though labels need fixing.
 Also ran calculate KLS with 10000 points from the training samples (10000 p_flow,p_KDE values), saved values of the flow||model and KDE||model to the Nflows_AMAZE_paper/plots/prod_091224/data directory, then saved these in the macros notebook too.
+
+21-01-25
+
+I found a bug in the functions calls of get_alpha(), specifically when it is called for evaluating the detectable betas for plotting. The function takes the conditional in terms of [chi_b, log(alpha_CE)], but I was calling it with [chi_b, alpha_CE] in plot_functions.py. Fortunately in the sampling get_alpha is called with [chi_b, log(alpha_CE)], so the inference results are fine, its just the plotting. I have saved the new betas over the previous file (Nflows_AMAZE_paper/plots/prod_091224/data/cont_retrainedCE_detectable_betas.hdf5) and generated the new continuous results plot.
