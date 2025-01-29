@@ -6,7 +6,9 @@ flow_path="/data/wiay/2297403c/amaze_model_select/Nflows_AMAZE_paper/inputs/flow
     --channel-label 'CE' \
     --hyperparam-idxs 0 3 \
     --conditional 0.0 2.0 \
-    --plot-cont-result \
+    --plot-flow-corner \
+    --plot-KDE \
+    --justplot \
     --KDE-result-path '/data/wiay/2297403c/amaze_model_select/Nflows_AMAZE_paper/outputs/discrete_GWTC3/KDEs/' \
     --discrete-result-path '/data/wiay/2297403c/amaze_model_select/Nflows_AMAZE_paper/outputs/discrete_GWTC3/flow_retrainedCE/' \
     --cont-result-path '/data/wiay/2297403c/amaze_model_select/Nflows_AMAZE_paper/outputs/cont_GWTC3/prod_retrainedCE/' \
