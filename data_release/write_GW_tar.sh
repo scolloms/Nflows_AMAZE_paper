@@ -1,0 +1,1 @@
+tar -cvzf gw_events.tar.gz --transform='s,events,gwevents,' -C ../inputs//GWTC-3/ events
