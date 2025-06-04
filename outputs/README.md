@@ -53,3 +53,9 @@ Also ran calculate KLS with 10000 points from the training samples (10000 p_flow
 21-01-25
 
 I found a bug in the functions calls of get_alpha(), specifically when it is called for evaluating the detectable betas for plotting. The function takes the conditional in terms of [chi_b, log(alpha_CE)], but I was calling it with [chi_b, alpha_CE] in plot_functions.py. Fortunately in the sampling get_alpha is called with [chi_b, log(alpha_CE)], so the inference results are fine, its just the plotting. I have saved the new betas over the previous file (Nflows_AMAZE_paper/plots/prod_091224/data/cont_retrainedCE_detectable_betas.hdf5) and generated the new continuous results plot.
+
+23-05-25
+
+I have finished running extra runs to satisfy emcee convergence. these are in /outputs/cont_GWTC3/prod_longsampling/, which contains 11 extra results files.
+(there were 2 more but they weren't necessary to satisfy convergence). The convergence investigation is located in /outputs/cont_GWTC3/plot_chains.ipynb.
+Now regenerating detectable samples, updating generating_macros.ipynb and plots/data release codes.

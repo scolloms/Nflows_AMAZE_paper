@@ -18,9 +18,9 @@ from matplotlib import gridspec
 
 import sys
 sys.path.append('/data/wiay/2297403c/amaze_model_select/AMAZE_model_selection/')
-from populations.bbh_models import *
+from populations.models import *
 from populations.Pop_Flows import FlowModel
-from sample.sample import lnlike_disc
+from sample.sample import lnlike
 
 colors = sns.color_palette("colorblind", n_colors=10)
 cp = [colors[0], colors[2], colors[4], colors[1], colors[3], colors[6], colors[9], colors[5], colors[8]]
@@ -77,6 +77,26 @@ _base_corner_kwargs = dict(
     hist2d_kwargs= dict(data_kwargs=dict(alpha=0.01))
 )
 
+param_dict = {'mchirp' : {'limits':(0,100), 'fullname':'Chirp Mass [$M_\\odot$]'},
+    'q' : {'limits':(0,1), 'fullname':'Mass Ratio'},
+    'chieff' : {'limits':(-1,1), 'fullname':'Effective Inspiral Spin'},
+    'z' : {'limits':(0,10), 'fullname':'Redshift'},
+    }
+hyperparam_dict = {'chib' : {'values':{'chi00':0.0, 'chi01':0.1, 'chi02':0.2, 'chi05':0.5},
+        'fullname':'$\\chi_\\mathrm{birth}$',
+        'transform':'linear'},
+    'alphaCE' : {'values':{'alpha02':0.2, 'alpha05':0.5, 'alpha10':1.0, 'alpha20':2.0, 'alpha50':5.0},
+        'fullname':'$\\alpha_\\mathrm{CE}$',
+        'transform':'log'}
+    }
+channels_dict = {
+    'CE':  {'parameters':['chib','alphaCE'], 'fullname':'Common Envelope'},
+    'CHE': {'parameters':['chib'], 'fullname':'Chemically Homogeneous Evolution'},
+    'GC':  {'parameters':['chib'], 'fullname':'Globular Clusters'},
+    'NSC': {'parameters':['chib'], 'fullname':'Nuclear Star Clusters'},
+    'SMT': {'parameters':['chib'], 'fullname':'Stable Mass Transfer'}
+    }
+
 def load_result_samps(filenames, Nhyper=2, Nchannels=5, detectable=False):
     """
     Loads hyperposterior samples from list of hdf5 files
@@ -84,6 +104,7 @@ def load_result_samps(filenames, Nhyper=2, Nchannels=5, detectable=False):
     """
     samples_allchains = np.array([])
     for i, filename in enumerate(filenames):
+        print(filename)
         try:
             result = h5py.File(filename, 'r')
         except:
@@ -310,7 +331,7 @@ def make_1D_result_discrete(filenames, second_files=None, labels = [None,None], 
     plt.savefig(f"{outdir}/pdfs/{figure_name}_flowKDE_infresults.pdf")
         
 
-def make_1D_result_continuous(filenames, filenames_det=None, figure_name='Continuous', detectable=False, outdir=_basepath):
+def make_1D_result_continuous(filenames, filenames_det=None, figure_name='Continuous', detectable=True, outdir=_basepath):
     channels = _channels
     colors = ['royalblue','lightskyblue','darkblue']
     _concentration = np.ones(len(channels))
@@ -319,7 +340,7 @@ def make_1D_result_continuous(filenames, filenames_det=None, figure_name='Contin
     chib_p0 =  np.random.uniform(0, 0.5, size=100000)
     Nhyper =2
 
-    fig = plt.figure(layout='constrained')
+    fig = plt.figure()
     if detectable==False:
         plt.rcParams['figure.figsize'] = [figure_width*2, figure_width]
         subfigs = fig.subfigures(2, 1, height_ratios=[1.,1.])
@@ -329,9 +350,9 @@ def make_1D_result_continuous(filenames, filenames_det=None, figure_name='Contin
         channel_labels = [_channel_label]
     else:
         plt.rcParams['figure.figsize'] = [figure_width*2, figure_width*1.5]
-        subfigs = fig.subfigures(3, 1, height_ratios=[1.,1., 1.])
+        subfigs = fig.subfigures(3, 1, height_ratios=[1.,1., 1.], hspace=0.05, facecolor=(0., 0., 0., 0.))
         ax_margs_det = subfigs[2].subplots(1, 5)
-        ax_chibalpha = subfigs[0].subplots(1, 2)
+        ax_chibalpha = subfigs[0].subplots(1, 2, gridspec_kw={'wspace': 0.3})
         ax_margs = subfigs[1].subplots(1, 5)
         ax_margs_set = [ax_margs, ax_margs_det]
         channel_labels = [_channel_label,_channel_label_det]
@@ -341,7 +362,7 @@ def make_1D_result_continuous(filenames, filenames_det=None, figure_name='Contin
     samples_allchains = load_result_samps(filenames)
     sample_sets = np.array([samples_allchains])
     if detectable:
-        samples_allchains_detectable = load_result_samps([filenames_det], detectable=True)
+        samples_allchains_detectable = load_result_samps(filenames_det, detectable=True)
         sample_sets = [samples_allchains, samples_allchains_detectable]
 
     #sample_sets = np.array([samps for samps in [samples_allchains, samples_allchains_detectable] if len(samps)>0])
@@ -421,8 +442,8 @@ def save_detectable_betas(filenames, analysis_name, outdir=_basepath):
     channels =['CE', 'CHE', 'GC', 'NSC', 'SMT']
 
     #initialise flows
-    model_names, flow = get_models(_models_path, channels, params, use_flows=True, device='cpu', sensitivity='midhighlatelow_network')
-
+    model_names, flow = get_models(_models_path, channels_dict, param_dict, hyperparam_dict, use_flows=True, sensitivity='midhighlatelow', spinmag=None)
+    
     #read all samples
     samples_allchains = load_result_samps(filenames)
     converted_betas = np.zeros((samples_allchains[:,2:].shape[0], samples_allchains[:,2:].shape[1]))
@@ -436,7 +457,7 @@ def save_detectable_betas(filenames, analysis_name, outdir=_basepath):
                 #needs to be log alphaCE!
                 alphas[i, cidx] = smdl.get_alpha([[samp[0], np.log(samp[1])]])
             else:
-                alphas[i, cidx] = smdl.get_alpha([samp[:1][0], 1.])
+                alphas[i, cidx] = smdl.get_alpha([samp[:1][0]])
 
     converted_betas = (samples_allchains[:,2:] * alphas)
     #divide by sum across channels
