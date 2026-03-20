@@ -1,0 +1,99 @@
+000 (193962.002.000) 2025-05-08 15:11:23 Job submitted from host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=schedd_2273069_d8c1>
+...
+001 (193962.002.000) 2025-05-08 19:09:24 Job executing on host: <130.209.45.193:9619?addrs=130.209.45.193-9619&alias=deimos.astro.gla.ac.uk&noUDP&sock=startd_50_303b>
+	SlotName: slot1_2@deimos.astro.gla.ac.uk
+	AvailableGPUs = { GPUs_GPU_34314e2d }
+	CondorScratchDir = "/var/lib/condor/execute/dir_3161"
+	Cpus = 1
+	Disk = 4195328
+	GPUs = 1
+	GPUs_GPU_34314e2d = [ Id = "GPU-34314e2d"; ClockMhz = 1695.0; Capability = 8.6; CoresPerCU = 128; DeviceName = "NVIDIA GeForce RTX 3090"; DeviceUuid = "34314e2d-1720-7fa1-dcf6-30072ca54ea3"; ECCEnabled = false; ComputeUnits = 82; NvidiaDriver = "535.216.01"; DriverVersion = 12.2; DevicePciBusId = "0000:02:00.0"; GlobalMemoryMb = 24260; MaxSupportedVersion = 12020 ]
+	Memory = 16384
+...
+006 (193962.002.000) 2025-05-08 19:09:32 Image size of job updated: 121812
+	119  -  MemoryUsage of job (MB)
+	121812  -  ResidentSetSize of job (KB)
+...
+006 (193962.002.000) 2025-05-08 19:14:32 Image size of job updated: 5989336
+	5849  -  MemoryUsage of job (MB)
+	5989336  -  ResidentSetSize of job (KB)
+...
+006 (193962.002.000) 2025-05-08 19:19:32 Image size of job updated: 6012844
+	5849  -  MemoryUsage of job (MB)
+	5989336  -  ResidentSetSize of job (KB)
+...
+006 (193962.002.000) 2025-05-08 19:29:33 Image size of job updated: 6012848
+	5849  -  MemoryUsage of job (MB)
+	5989336  -  ResidentSetSize of job (KB)
+...
+006 (193962.002.000) 2025-05-08 19:34:33 Image size of job updated: 6012848
+	5857  -  MemoryUsage of job (MB)
+	5997396  -  ResidentSetSize of job (KB)
+...
+006 (193962.002.000) 2025-05-08 19:39:34 Image size of job updated: 6012848
+	5872  -  MemoryUsage of job (MB)
+	6012848  -  ResidentSetSize of job (KB)
+...
+006 (193962.002.000) 2025-05-09 01:25:04 Image size of job updated: 6014888
+	5872  -  MemoryUsage of job (MB)
+	6012848  -  ResidentSetSize of job (KB)
+...
+006 (193962.002.000) 2025-05-09 01:35:05 Image size of job updated: 6014888
+	5874  -  MemoryUsage of job (MB)
+	6014888  -  ResidentSetSize of job (KB)
+...
+006 (193962.002.000) 2025-05-09 02:00:06 Image size of job updated: 6031052
+	5877  -  MemoryUsage of job (MB)
+	6017648  -  ResidentSetSize of job (KB)
+...
+006 (193962.002.000) 2025-05-09 02:05:07 Image size of job updated: 6031052
+	5890  -  MemoryUsage of job (MB)
+	6031052  -  ResidentSetSize of job (KB)
+...
+006 (193962.002.000) 2025-05-09 09:16:01 Image size of job updated: 6031920
+	5890  -  MemoryUsage of job (MB)
+	6031052  -  ResidentSetSize of job (KB)
+...
+006 (193962.002.000) 2025-05-09 09:26:02 Image size of job updated: 6031920
+	5891  -  MemoryUsage of job (MB)
+	6031920  -  ResidentSetSize of job (KB)
+...
+006 (193962.002.000) 2025-05-09 10:16:05 Image size of job updated: 6032860
+	5891  -  MemoryUsage of job (MB)
+	6031920  -  ResidentSetSize of job (KB)
+...
+006 (193962.002.000) 2025-05-09 11:21:10 Image size of job updated: 6032860
+	5892  -  MemoryUsage of job (MB)
+	6032860  -  ResidentSetSize of job (KB)
+...
+001 (193962.002.000) 2025-05-09 19:54:54 Job executing on host: <130.209.45.81:9619?addrs=130.209.45.81-9619&alias=wiay.astro.gla.ac.uk&noUDP&sock=startd_49_80a2>
+	SlotName: slot1_2@wiay.astro.gla.ac.uk
+	AvailableGPUs = { GPUs_GPU_ccce0a6d }
+	CondorScratchDir = "/var/lib/condor/execute/dir_161078"
+	Cpus = 1
+	Disk = 4195328
+	GPUs = 1
+	GPUs_GPU_ccce0a6d = [ Id = "GPU-ccce0a6d"; ClockMhz = 1545.0; Capability = 7.5; CoresPerCU = 64; DeviceName = "NVIDIA GeForce RTX 2080 Ti"; DeviceUuid = "ccce0a6d-fcb7-3017-31fe-49f0f1089b6b"; ECCEnabled = false; ComputeUnits = 68; NvidiaDriver = "555.42.06"; DriverVersion = 12.5; DevicePciBusId = "0000:B1:00.0"; GlobalMemoryMb = 10827; MaxSupportedVersion = 12050 ]
+	Memory = 16384
+...
+005 (193962.002.000) 2025-05-15 11:56:06 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 4 07:44:35, Sys 1 08:23:13  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 5 05:32:03, Sys 1 10:03:59  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated Assigned
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      2     4194304   4195328 
+	   GPUs                 :      0.57        1         1 "GPU-ccce0a6d"
+	   GpusMemory (MB)      :   3807                       
+	   Memory (MB)          :   7325       16384     16384 
+	   TimeExecute (s)      : 489672                       
+	   TimeSlotBusy (s)     : 489673                       
+
+	Job terminated of its own accord at 2025-05-15T10:56:06Z with exit-code 0.
+...

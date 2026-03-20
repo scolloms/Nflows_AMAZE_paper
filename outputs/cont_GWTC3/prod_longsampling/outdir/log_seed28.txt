@@ -1,0 +1,87 @@
+000 (193962.004.000) 2025-05-08 15:11:23 Job submitted from host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=schedd_2273069_d8c1>
+...
+001 (193962.004.000) 2025-05-09 08:51:02 Job executing on host: <130.209.45.193:9619?addrs=130.209.45.193-9619&alias=deimos.astro.gla.ac.uk&noUDP&sock=startd_50_303b>
+	SlotName: slot1_1@deimos.astro.gla.ac.uk
+	AvailableGPUs = { GPUs_GPU_9ed99095 }
+	CondorScratchDir = "/var/lib/condor/execute/dir_4273"
+	Cpus = 1
+	Disk = 4195328
+	GPUs = 1
+	GPUs_GPU_9ed99095 = [ Id = "GPU-9ed99095"; ClockMhz = 1695.0; Capability = 8.6; CoresPerCU = 128; DeviceName = "NVIDIA GeForce RTX 3090"; DeviceUuid = "9ed99095-ea7d-ae22-8aa3-a439270c7875"; ECCEnabled = false; ComputeUnits = 82; NvidiaDriver = "535.216.01"; DriverVersion = 12.2; DevicePciBusId = "0000:01:00.0"; GlobalMemoryMb = 24260; MaxSupportedVersion = 12020 ]
+	Memory = 16384
+...
+006 (193962.004.000) 2025-05-09 08:51:10 Image size of job updated: 213084
+	209  -  MemoryUsage of job (MB)
+	213084  -  ResidentSetSize of job (KB)
+...
+006 (193962.004.000) 2025-05-09 08:56:10 Image size of job updated: 6005752
+	5857  -  MemoryUsage of job (MB)
+	5996948  -  ResidentSetSize of job (KB)
+...
+006 (193962.004.000) 2025-05-09 09:01:11 Image size of job updated: 6017516
+	5857  -  MemoryUsage of job (MB)
+	5996948  -  ResidentSetSize of job (KB)
+...
+006 (193962.004.000) 2025-05-09 09:16:12 Image size of job updated: 6017532
+	5857  -  MemoryUsage of job (MB)
+	5996948  -  ResidentSetSize of job (KB)
+...
+006 (193962.004.000) 2025-05-09 09:26:12 Image size of job updated: 6023412
+	5857  -  MemoryUsage of job (MB)
+	5996948  -  ResidentSetSize of job (KB)
+...
+006 (193962.004.000) 2025-05-09 11:16:25 Image size of job updated: 6023412
+	5869  -  MemoryUsage of job (MB)
+	6009080  -  ResidentSetSize of job (KB)
+...
+006 (193962.004.000) 2025-05-09 11:21:25 Image size of job updated: 6023412
+	5871  -  MemoryUsage of job (MB)
+	6011664  -  ResidentSetSize of job (KB)
+...
+006 (193962.004.000) 2025-05-09 13:01:36 Image size of job updated: 6023412
+	5873  -  MemoryUsage of job (MB)
+	6013176  -  ResidentSetSize of job (KB)
+...
+006 (193962.004.000) 2025-05-09 13:06:36 Image size of job updated: 6023412
+	5875  -  MemoryUsage of job (MB)
+	6015224  -  ResidentSetSize of job (KB)
+...
+006 (193962.004.000) 2025-05-09 13:21:38 Image size of job updated: 6023412
+	5877  -  MemoryUsage of job (MB)
+	6017536  -  ResidentSetSize of job (KB)
+...
+006 (193962.004.000) 2025-05-09 15:41:51 Image size of job updated: 6023416
+	5877  -  MemoryUsage of job (MB)
+	6017536  -  ResidentSetSize of job (KB)
+...
+001 (193962.004.000) 2025-05-09 19:55:54 Job executing on host: <130.209.45.56:9619?addrs=130.209.45.56-9619&alias=serenity.astro.gla.ac.uk&noUDP&sock=startd_50_303b>
+	SlotName: slot1_2@serenity.astro.gla.ac.uk
+	AvailableGPUs = { GPUs_GPU_625f6b03 }
+	CondorScratchDir = "/var/lib/condor/execute/dir_80577"
+	Cpus = 1
+	Disk = 4195328
+	GPUs = 1
+	GPUs_GPU_625f6b03 = [ Id = "GPU-625f6b03"; ClockMhz = 1695.0; Capability = 8.6; CoresPerCU = 128; DeviceName = "NVIDIA GeForce RTX 3090"; DeviceUuid = "625f6b03-2809-23ef-06f5-609bcf7f9386"; ECCEnabled = false; ComputeUnits = 82; NvidiaDriver = "535.216.01"; DriverVersion = 12.2; DevicePciBusId = "0000:68:00.0"; GlobalMemoryMb = 24257; MaxSupportedVersion = 12020 ]
+	Memory = 16384
+...
+005 (193962.004.000) 2025-05-12 23:49:41 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 3 01:15:30, Sys 0 02:41:41  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 3 09:52:51, Sys 0 03:45:47  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated Assigned
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      2     4194304   4195328 
+	   GPUs                 :      0.73        1         1 "GPU-625f6b03"
+	   GpusMemory (MB)      :   3905                       
+	   Memory (MB)          :   7325       16384     16384 
+	   TimeExecute (s)      : 273227                       
+	   TimeSlotBusy (s)     : 273227                       
+
+	Job terminated of its own accord at 2025-05-12T22:49:41Z with exit-code 0.
+...

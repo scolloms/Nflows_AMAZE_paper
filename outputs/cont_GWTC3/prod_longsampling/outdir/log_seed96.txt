@@ -1,0 +1,77 @@
+000 (194077.002.000) 2025-05-15 14:21:21 Job submitted from host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=schedd_377454_a090>
+...
+001 (194077.002.000) 2025-05-15 14:21:22 Job executing on host: <130.209.45.193:9619?addrs=130.209.45.193-9619&alias=deimos.astro.gla.ac.uk&noUDP&sock=startd_50_303b>
+	SlotName: slot1_2@deimos.astro.gla.ac.uk
+	AvailableGPUs = { GPUs_GPU_9ed99095 }
+	CondorScratchDir = "/var/lib/condor/execute/dir_12483"
+	Cpus = 1
+	Disk = 4195328
+	GPUs = 1
+	GPUs_GPU_9ed99095 = [ Id = "GPU-9ed99095"; ClockMhz = 1695.0; Capability = 8.6; CoresPerCU = 128; DeviceName = "NVIDIA GeForce RTX 3090"; DeviceUuid = "9ed99095-ea7d-ae22-8aa3-a439270c7875"; ECCEnabled = false; ComputeUnits = 82; NvidiaDriver = "535.216.01"; DriverVersion = 12.2; DevicePciBusId = "0000:01:00.0"; GlobalMemoryMb = 24260; MaxSupportedVersion = 12020 ]
+	Memory = 16384
+...
+006 (194077.002.000) 2025-05-15 14:21:30 Image size of job updated: 39624
+	39  -  MemoryUsage of job (MB)
+	39624  -  ResidentSetSize of job (KB)
+...
+006 (194077.002.000) 2025-05-15 14:26:30 Image size of job updated: 5998588
+	5858  -  MemoryUsage of job (MB)
+	5998588  -  ResidentSetSize of job (KB)
+...
+006 (194077.002.000) 2025-05-15 14:31:30 Image size of job updated: 6025028
+	5884  -  MemoryUsage of job (MB)
+	6025028  -  ResidentSetSize of job (KB)
+...
+006 (194077.002.000) 2025-05-15 14:46:32 Image size of job updated: 6025032
+	5884  -  MemoryUsage of job (MB)
+	6025032  -  ResidentSetSize of job (KB)
+...
+006 (194077.002.000) 2025-05-15 14:51:32 Image size of job updated: 6025036
+	5884  -  MemoryUsage of job (MB)
+	6025032  -  ResidentSetSize of job (KB)
+...
+006 (194077.002.000) 2025-05-15 14:56:33 Image size of job updated: 6025036
+	5884  -  MemoryUsage of job (MB)
+	6025036  -  ResidentSetSize of job (KB)
+...
+006 (194077.002.000) 2025-05-15 22:37:21 Image size of job updated: 6027216
+	5886  -  MemoryUsage of job (MB)
+	6027216  -  ResidentSetSize of job (KB)
+...
+006 (194077.002.000) 2025-05-16 21:59:41 Image size of job updated: 6027220
+	5886  -  MemoryUsage of job (MB)
+	6027216  -  ResidentSetSize of job (KB)
+...
+006 (194077.002.000) 2025-05-16 22:14:42 Image size of job updated: 6027220
+	5886  -  MemoryUsage of job (MB)
+	6027220  -  ResidentSetSize of job (KB)
+...
+006 (194077.002.000) 2025-05-17 09:25:51 Image size of job updated: 6027704
+	5886  -  MemoryUsage of job (MB)
+	6027220  -  ResidentSetSize of job (KB)
+...
+006 (194077.002.000) 2025-05-17 09:35:52 Image size of job updated: 6027704
+	5887  -  MemoryUsage of job (MB)
+	6027704  -  ResidentSetSize of job (KB)
+...
+005 (194077.002.000) 2025-05-19 03:02:14 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 3 05:56:30, Sys 0 06:35:57  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 3 05:56:30, Sys 0 06:35:57  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated Assigned
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      2     4194304   4195328 
+	   GPUs                 :      0.56        1         1 "GPU-9ed99095"
+	   GpusMemory (MB)      :   3902                       
+	   Memory (MB)          :   5887       16384     16384 
+	   TimeExecute (s)      : 304852                       
+	   TimeSlotBusy (s)     : 304853                       
+
+	Job terminated of its own accord at 2025-05-19T02:02:14Z with exit-code 0.
+...

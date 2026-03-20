@@ -1,0 +1,74 @@
+000 (194227.003.000) 2025-05-19 12:01:21 Job submitted from host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=schedd_377454_a090>
+...
+001 (194227.003.000) 2025-05-19 12:01:36 Job executing on host: <130.209.45.81:9619?addrs=130.209.45.81-9619&alias=wiay.astro.gla.ac.uk&noUDP&sock=startd_49_80a2>
+	SlotName: slot1_3@wiay.astro.gla.ac.uk
+	AvailableGPUs = { GPUs_GPU_df018c53 }
+	CondorScratchDir = "/var/lib/condor/execute/dir_185714"
+	Cpus = 1
+	Disk = 4195328
+	GPUs = 1
+	GPUs_GPU_df018c53 = [ Id = "GPU-df018c53"; ClockMhz = 1545.0; Capability = 7.5; CoresPerCU = 64; DeviceName = "NVIDIA GeForce RTX 2080 Ti"; DeviceUuid = "df018c53-b27b-0d21-a520-70ec0819ac12"; ECCEnabled = false; ComputeUnits = 68; NvidiaDriver = "555.42.06"; DriverVersion = 12.5; DevicePciBusId = "0000:D9:00.0"; GlobalMemoryMb = 10827; MaxSupportedVersion = 12050 ]
+	Memory = 16384
+...
+006 (194227.003.000) 2025-05-19 12:01:45 Image size of job updated: 223900
+	219  -  MemoryUsage of job (MB)
+	223900  -  ResidentSetSize of job (KB)
+...
+006 (194227.003.000) 2025-05-19 12:06:46 Image size of job updated: 5715532
+	5578  -  MemoryUsage of job (MB)
+	5711248  -  ResidentSetSize of job (KB)
+...
+006 (194227.003.000) 2025-05-19 12:11:46 Image size of job updated: 5715532
+	5578  -  MemoryUsage of job (MB)
+	5711252  -  ResidentSetSize of job (KB)
+...
+006 (194227.003.000) 2025-05-19 12:16:47 Image size of job updated: 5727828
+	5578  -  MemoryUsage of job (MB)
+	5711252  -  ResidentSetSize of job (KB)
+...
+006 (194227.003.000) 2025-05-19 12:21:47 Image size of job updated: 5733456
+	5578  -  MemoryUsage of job (MB)
+	5711252  -  ResidentSetSize of job (KB)
+...
+006 (194227.003.000) 2025-05-19 12:26:47 Image size of job updated: 5733840
+	5578  -  MemoryUsage of job (MB)
+	5711252  -  ResidentSetSize of job (KB)
+...
+006 (194227.003.000) 2025-05-19 12:31:48 Image size of job updated: 5733972
+	5578  -  MemoryUsage of job (MB)
+	5711252  -  ResidentSetSize of job (KB)
+...
+006 (194227.003.000) 2025-05-19 12:51:49 Image size of job updated: 5733972
+	5590  -  MemoryUsage of job (MB)
+	5723932  -  ResidentSetSize of job (KB)
+...
+006 (194227.003.000) 2025-05-19 12:56:49 Image size of job updated: 5733972
+	5592  -  MemoryUsage of job (MB)
+	5725944  -  ResidentSetSize of job (KB)
+...
+006 (194227.003.000) 2025-05-19 13:26:53 Image size of job updated: 5737692
+	5592  -  MemoryUsage of job (MB)
+	5725944  -  ResidentSetSize of job (KB)
+...
+006 (194227.003.000) 2025-05-19 14:37:02 Image size of job updated: 5737692
+	5598  -  MemoryUsage of job (MB)
+	5731816  -  ResidentSetSize of job (KB)
+...
+004 (194227.003.000) 2025-05-23 13:14:53 Job was evicted.
+	(0) CPU times
+		Usr 2 20:50:15, Sys 1 04:29:03  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated Assigned
+	   Cpus                 :      1.00        1         1 
+	   Disk (KB)            :      2     4194304   4195328 
+	   GPUs                 :      0.55        1         1 "GPU-df018c53"
+	   GpusMemory (MB)      :   3807                       
+	   Memory (MB)          :   5598       16384     16384 
+	   TimeExecute (s)      : 349997                       
+	   TimeSlotBusy (s)     : 349997                       
+...
+009 (194227.003.000) 2025-05-23 13:14:53 Job was aborted.
+	via condor_rm (by user 2297403c)
+...
