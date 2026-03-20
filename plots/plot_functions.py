@@ -19,8 +19,8 @@ from matplotlib import gridspec
 import sys
 sys.path.append('/data/wiay/2297403c/amaze_model_select/AMAZE_model_selection/')
 from populations.models import *
-from populations.Pop_Flows import FlowModel
-from sample.sample import lnlike
+#from populations.Pop_Flows import FlowModel
+#from sample.sample import lnlike
 
 colors = sns.color_palette("colorblind", n_colors=10)
 cp = [colors[0], colors[2], colors[4], colors[1], colors[3], colors[6], colors[9], colors[5], colors[8]]
